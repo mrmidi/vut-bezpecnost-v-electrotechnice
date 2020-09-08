@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5572C5D58C8DB7431713E6 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06FC6FFC37640A98B43307E /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */; };
+		3A46C6A42504EC3E009AF365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46C6A32504EC3E009AF365 /* AppDelegate.swift */; };
+		3A46C6A62504EC3E009AF365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46C6A52504EC3E009AF365 /* SceneDelegate.swift */; };
+		3A46C6A82504EC3E009AF365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46C6A72504EC3E009AF365 /* ViewController.swift */; };
+		3A46C6AB2504EC3E009AF365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A46C6A92504EC3E009AF365 /* Main.storyboard */; };
+		3A46C6AD2504EC3F009AF365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A46C6AC2504EC3F009AF365 /* Assets.xcassets */; };
+		3A46C6B02504EC3F009AF365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A46C6AE2504EC3F009AF365 /* LaunchScreen.storyboard */; };
+		3A7CD13E2505161E00D0A4BA /* ErrorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CD13D2505161E00D0A4BA /* ErrorsViewController.swift */; };
+		3AA8CFF62504ED2E000A3652 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8CFF52504ED2E000A3652 /* model.swift */; };
+		3AA8CFF82504ED86000A3652 /* sql.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8CFF72504ED86000A3652 /* sql.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A46C6A02504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VUT Bezpecnost v elektrotechnice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A46C6A32504EC3E009AF365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A46C6A52504EC3E009AF365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A46C6A72504EC3E009AF365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A46C6AA2504EC3E009AF365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A46C6AC2504EC3F009AF365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A46C6AF2504EC3F009AF365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A46C6B12504EC3F009AF365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7CD13D2505161E00D0A4BA /* ErrorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsViewController.swift; sourceTree = "<group>"; };
+		3AA8CFF52504ED2E000A3652 /* model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = model.swift; path = "../../VUT Bezpečnost v elektrotechnice/VUT Bezpecnost v elektrotechnice/model.swift"; sourceTree = "<group>"; };
+		3AA8CFF72504ED86000A3652 /* sql.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sql.bundle; path = "VUT Bezpecnost v elektrotechnice/sql.bundle"; sourceTree = "<group>"; };
+		A09EDFB94350A94FF91681B1 /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig"; path = "Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig"; sourceTree = "<group>"; };
+		B06FC6FFC37640A98B43307E /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUT_Bezpecnost_v_elektrotechnice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC9E0D51A91906C7FF13531 /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig"; path = "Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A46C69D2504EC3E009AF365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5572C5D58C8DB7431713E6 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21CD740C320983EF5A2837D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9E0D51A91906C7FF13531 /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */,
+				A09EDFB94350A94FF91681B1 /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A46C6972504EC3E009AF365 = {
+			isa = PBXGroup;
+			children = (
+				3A46C6A22504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice */,
+				3A46C6A12504EC3E009AF365 /* Products */,
+				3AA8CFF72504ED86000A3652 /* sql.bundle */,
+				21CD740C320983EF5A2837D5 /* Pods */,
+				C286B9F53D9D663ED2C105A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A46C6A12504EC3E009AF365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A46C6A02504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A46C6A22504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice */ = {
+			isa = PBXGroup;
+			children = (
+				3A46C6A32504EC3E009AF365 /* AppDelegate.swift */,
+				3A46C6A52504EC3E009AF365 /* SceneDelegate.swift */,
+				3A46C6A72504EC3E009AF365 /* ViewController.swift */,
+				3A46C6A92504EC3E009AF365 /* Main.storyboard */,
+				3A7CD13D2505161E00D0A4BA /* ErrorsViewController.swift */,
+				3AA8CFF52504ED2E000A3652 /* model.swift */,
+				3A46C6AC2504EC3F009AF365 /* Assets.xcassets */,
+				3A46C6AE2504EC3F009AF365 /* LaunchScreen.storyboard */,
+				3A46C6B12504EC3F009AF365 /* Info.plist */,
+			);
+			path = "VUT Bezpecnost v elektrotechnice";
+			sourceTree = "<group>";
+		};
+		C286B9F53D9D663ED2C105A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B06FC6FFC37640A98B43307E /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A46C69F2504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A46C6B42504EC3F009AF365 /* Build configuration list for PBXNativeTarget "VUT Bezpecnost v elektrotechnice" */;
+			buildPhases = (
+				D95072E48474B7A0CAF21AC4 /* [CP] Check Pods Manifest.lock */,
+				3A46C69C2504EC3E009AF365 /* Sources */,
+				3A46C69D2504EC3E009AF365 /* Frameworks */,
+				3A46C69E2504EC3E009AF365 /* Resources */,
+				C5DBD9ED8934287422A91818 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VUT Bezpecnost v elektrotechnice";
+			productName = "VUT Bezpecnost v elektrotechnice";
+			productReference = 3A46C6A02504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A46C6982504EC3E009AF365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Alexander Shabelnikov";
+				TargetAttributes = {
+					3A46C69F2504EC3E009AF365 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 3A46C69B2504EC3E009AF365 /* Build configuration list for PBXProject "VUT Bezpecnost v elektrotechnice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A46C6972504EC3E009AF365;
+			productRefGroup = 3A46C6A12504EC3E009AF365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A46C69F2504EC3E009AF365 /* VUT Bezpecnost v elektrotechnice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A46C69E2504EC3E009AF365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A46C6B02504EC3F009AF365 /* LaunchScreen.storyboard in Resources */,
+				3A46C6AD2504EC3F009AF365 /* Assets.xcassets in Resources */,
+				3AA8CFF82504ED86000A3652 /* sql.bundle in Resources */,
+				3A46C6AB2504EC3E009AF365 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5DBD9ED8934287422A91818 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95072E48474B7A0CAF21AC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VUT Bezpecnost v elektrotechnice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A46C69C2504EC3E009AF365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A46C6A82504EC3E009AF365 /* ViewController.swift in Sources */,
+				3A7CD13E2505161E00D0A4BA /* ErrorsViewController.swift in Sources */,
+				3A46C6A42504EC3E009AF365 /* AppDelegate.swift in Sources */,
+				3A46C6A62504EC3E009AF365 /* SceneDelegate.swift in Sources */,
+				3AA8CFF62504ED2E000A3652 /* model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A46C6A92504EC3E009AF365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A46C6AA2504EC3E009AF365 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A46C6AE2504EC3F009AF365 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A46C6AF2504EC3F009AF365 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A46C6B22504EC3F009AF365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A46C6B32504EC3F009AF365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A46C6B52504EC3F009AF365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC9E0D51A91906C7FF13531 /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6YA6B56LR;
+				INFOPLIST_FILE = "VUT Bezpecnost v elektrotechnice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "mrmidi.VUT-Bezpecnost-v-elektrotechnice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A46C6B62504EC3F009AF365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09EDFB94350A94FF91681B1 /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6YA6B56LR;
+				INFOPLIST_FILE = "VUT Bezpecnost v elektrotechnice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "mrmidi.VUT-Bezpecnost-v-elektrotechnice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A46C69B2504EC3E009AF365 /* Build configuration list for PBXProject "VUT Bezpecnost v elektrotechnice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A46C6B22504EC3F009AF365 /* Debug */,
+				3A46C6B32504EC3F009AF365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A46C6B42504EC3F009AF365 /* Build configuration list for PBXNativeTarget "VUT Bezpecnost v elektrotechnice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A46C6B52504EC3F009AF365 /* Debug */,
+				3A46C6B62504EC3F009AF365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A46C6982504EC3E009AF365 /* Project object */;
+}

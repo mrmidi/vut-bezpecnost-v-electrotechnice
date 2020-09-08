@@ -1,0 +1,6 @@
+framework module Pods_VUT_Bezpecnost_v_elektrotechnice {
+  umbrella header "Pods-VUT Bezpecnost v elektrotechnice-umbrella.h"
+
+  export *
+  module * { export * }
+}
