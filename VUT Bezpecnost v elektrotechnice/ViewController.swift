@@ -9,7 +9,8 @@
 import UIKit
 import SQLite
 
-    var path: URL?
+var randomOrder = true
+var simulateExam = false
 
 class ViewController: UIViewController {
     
@@ -19,6 +20,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //long press
+        
         
         //swipes
         let leftRecognizer = UISwipeGestureRecognizer(target: self, action:
@@ -32,22 +36,20 @@ class ViewController: UIViewController {
         
         
         
+        
         setupQuestions()
         //shuffle questions
         questionModel.shuffle()
         updateView()
-        print(getDocumentsDirectory())
         copyDatabaseIfNeeded()
-        path = getDocumentsDirectory()
+        
         
     }
     
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
+    
+    
+
     
     
     var questionNum = 0
@@ -59,7 +61,6 @@ class ViewController: UIViewController {
     var rebuiltAnswers = false
 
 
-    
 
     
     
@@ -75,7 +76,13 @@ class ViewController: UIViewController {
     }
     
     func restart() {
-        questionModel.shuffle()
+        if randomOrder {
+            questionModel.shuffle() }
+        if simulateExam {
+            setupExam()
+            questionModel = examModel
+            print(questionModel)
+        }
         questionNum = 0;
         errors = 0
         errorLabel.text = ("Chyby: " + String(errors))
@@ -155,8 +162,19 @@ class ViewController: UIViewController {
 //            questionModel[q].isAnswered = true
             questionModel[q].answer = a
         }
+        if simulateExam {
+            if errors > 1 {
+                fail()
+            }
+        }
         
         return false
+    }
+    
+    func fail() {
+        let alert = UIAlertController(title: "You failed", message: "You failed to pass exam mode. You can make only 1 mistake in 10 random questions.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     func setCorrect(a: Int) {
@@ -203,7 +221,13 @@ class ViewController: UIViewController {
     }
     
     func addError() {
-        let db = try! Connection("\(path!)/quiz.db")
+        
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+        ).first!
+        
+        let db = try! Connection("\(path)/quiz.db")
+//        let db = try! Connection("\(path!)quiz.db")
         let errors = Table("errors")
         let id = Expression<Int>("id")
         let text = Expression<String>("text")
@@ -256,6 +280,7 @@ class ViewController: UIViewController {
     
     @IBAction func mistakesButton(_ sender: Any) {
         if errorsModel.count > 0 {
+            simulateExam = false
             questionModel = errorsModel
             errorsModel.removeAll()
             restart()

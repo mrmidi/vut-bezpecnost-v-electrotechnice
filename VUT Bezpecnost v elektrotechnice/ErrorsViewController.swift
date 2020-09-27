@@ -14,9 +14,14 @@ class ErrorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("\(path!)quiz.db")
         
-        let db = try! Connection("\(path!)quiz.db")
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+        ).first!
+        
+        let db = try! Connection("\(path)/quiz.db")
+        
+        //let db = try! Connection("\(path!)quiz.db")
         let errors = Table("errors")
 
 //        let id = Expression<Int>("id")
@@ -40,7 +45,12 @@ class ErrorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func makeArray() -> [String] {
         var result = [String]()
-        let db = try! Connection("\(path!)/quiz.db")
+        
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+        ).first!
+        
+        let db = try! Connection("\(path)/quiz.db")
         let errors = Table("errors")
         let count = Expression<Int>("count")
         let all = Array(try! db.prepare(errors.order(count.desc)))
@@ -62,13 +72,41 @@ class ErrorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        orderSwitch.setOn(randomOrder, animated: false)
+        examSwitch.setOn(simulateExam, animated: false)
     }
     
     @IBAction func resetButton(_ sender: Any) {
-        let db = try! Connection("\(path!)/quiz.db")
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+        ).first!
+        
+        let db = try! Connection("\(path)/quiz.db")
         let errors = Table("errors")
         try! db.run(errors.delete())
     }
+    
+    
+    @IBAction func setOrder(_ sender: Any) {
+        if !randomOrder {
+            randomOrder = true
+        } else {
+        randomOrder = false
+        }
+    }
+    
+    @IBAction func setExam(_ sender: Any) {
+        if !simulateExam {
+            simulateExam = true
+        } else {
+            simulateExam = false
+        }
+    }
+    
+    
+    
+    @IBOutlet weak var orderSwitch: UISwitch!
+    @IBOutlet weak var examSwitch: UISwitch!
     
 
     

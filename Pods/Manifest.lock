@@ -1,25 +1,32 @@
 PODS:
-  - SQLCipher (4.2.0):
-    - SQLCipher/standard (= 4.2.0)
-  - SQLCipher/common (4.2.0)
-  - SQLCipher/standard (4.2.0):
-    - SQLCipher/common
-  - SQLite.swift/SQLCipher (0.12.2):
-    - SQLCipher (>= 3.4.0)
+  - SQLite.swift/standalone (0.12.2):
+    - sqlite3
+  - sqlite3 (3.33.0):
+    - sqlite3/common (= 3.33.0)
+  - sqlite3/common (3.33.0)
 
 DEPENDENCIES:
-  - SQLCipher (= 4.2.0)
-  - SQLite.swift/SQLCipher (~> 0.12.2)
+  - SQLite.swift/standalone (from `https://github.com/stephencelis/SQLite.swift`, branch `master`)
+  - sqlite3 (= 3.33.0)
 
 SPEC REPOS:
   trunk:
-    - SQLCipher
-    - SQLite.swift
+    - sqlite3
+
+EXTERNAL SOURCES:
+  SQLite.swift:
+    :branch: master
+    :git: https://github.com/stephencelis/SQLite.swift
+
+CHECKOUT OPTIONS:
+  SQLite.swift:
+    :commit: 70fb7af324cb3170d921f135f0c84cbdb6487cc2
+    :git: https://github.com/stephencelis/SQLite.swift
 
 SPEC CHECKSUMS:
-  SQLCipher: 0187a2180ac288ea686b670b7141da62cd013b16
-  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  SQLite.swift: 70f830d00b7ccd59dd634e2177d43f7541066fdc
+  sqlite3: cd6cd1a4ee50b8b5fdad2940bd05b1c1d2659efc
 
-PODFILE CHECKSUM: 8c3fef5958d632688bc6a3e0dcf0e9fe8e19ec3a
+PODFILE CHECKSUM: 6ea3b30153ba5c97c26fcc076000c19237526500
 
 COCOAPODS: 1.9.3

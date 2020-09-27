@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B5572C5D58C8DB7431713E6 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06FC6FFC37640A98B43307E /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */; };
+		25BEC9759FE7D19E69AA1CDB /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F02F71F3E13DC8459932C7 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */; };
 		3A46C6A42504EC3E009AF365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46C6A32504EC3E009AF365 /* AppDelegate.swift */; };
 		3A46C6A62504EC3E009AF365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46C6A52504EC3E009AF365 /* SceneDelegate.swift */; };
 		3A46C6A82504EC3E009AF365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46C6A72504EC3E009AF365 /* ViewController.swift */; };
@@ -31,9 +31,9 @@
 		3A7CD13D2505161E00D0A4BA /* ErrorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsViewController.swift; sourceTree = "<group>"; };
 		3AA8CFF52504ED2E000A3652 /* model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = model.swift; path = "../../VUT Bezpečnost v elektrotechnice/VUT Bezpecnost v elektrotechnice/model.swift"; sourceTree = "<group>"; };
 		3AA8CFF72504ED86000A3652 /* sql.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = sql.bundle; path = "VUT Bezpecnost v elektrotechnice/sql.bundle"; sourceTree = "<group>"; };
-		A09EDFB94350A94FF91681B1 /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig"; path = "Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig"; sourceTree = "<group>"; };
-		B06FC6FFC37640A98B43307E /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUT_Bezpecnost_v_elektrotechnice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDC9E0D51A91906C7FF13531 /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig"; path = "Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig"; sourceTree = "<group>"; };
+		925FD7BF11E9C23D66DFE20C /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig"; path = "Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig"; sourceTree = "<group>"; };
+		95A0A431DA49D98461C5FA1C /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig"; path = "Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig"; sourceTree = "<group>"; };
+		A2F02F71F3E13DC8459932C7 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VUT_Bezpecnost_v_elektrotechnice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +41,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B5572C5D58C8DB7431713E6 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework in Frameworks */,
+				25BEC9759FE7D19E69AA1CDB /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FE505727EFFC85ED61A9AEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2F02F71F3E13DC8459932C7 /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		21CD740C320983EF5A2837D5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DDC9E0D51A91906C7FF13531 /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */,
-				A09EDFB94350A94FF91681B1 /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */,
+				95A0A431DA49D98461C5FA1C /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */,
+				925FD7BF11E9C23D66DFE20C /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,7 +72,7 @@
 				3A46C6A12504EC3E009AF365 /* Products */,
 				3AA8CFF72504ED86000A3652 /* sql.bundle */,
 				21CD740C320983EF5A2837D5 /* Pods */,
-				C286B9F53D9D663ED2C105A2 /* Frameworks */,
+				1FE505727EFFC85ED61A9AEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,14 +100,6 @@
 			path = "VUT Bezpecnost v elektrotechnice";
 			sourceTree = "<group>";
 		};
-		C286B9F53D9D663ED2C105A2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B06FC6FFC37640A98B43307E /* Pods_VUT_Bezpecnost_v_elektrotechnice.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,11 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A46C6B42504EC3F009AF365 /* Build configuration list for PBXNativeTarget "VUT Bezpecnost v elektrotechnice" */;
 			buildPhases = (
-				D95072E48474B7A0CAF21AC4 /* [CP] Check Pods Manifest.lock */,
+				CD874D29C3544E4CB4B92174 /* [CP] Check Pods Manifest.lock */,
 				3A46C69C2504EC3E009AF365 /* Sources */,
 				3A46C69D2504EC3E009AF365 /* Frameworks */,
 				3A46C69E2504EC3E009AF365 /* Resources */,
-				C5DBD9ED8934287422A91818 /* [CP] Embed Pods Frameworks */,
+				C4EBC744B86C0C5567C39BB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Alexander Shabelnikov";
 				TargetAttributes = {
 					3A46C69F2504EC3E009AF365 = {
@@ -170,7 +170,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C5DBD9ED8934287422A91818 /* [CP] Embed Pods Frameworks */ = {
+		C4EBC744B86C0C5567C39BB0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,7 +187,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VUT Bezpecnost v elektrotechnice/Pods-VUT Bezpecnost v elektrotechnice-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D95072E48474B7A0CAF21AC4 /* [CP] Check Pods Manifest.lock */ = {
+		CD874D29C3544E4CB4B92174 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,6 +272,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -332,6 +333,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -350,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -362,9 +364,10 @@
 		};
 		3A46C6B52504EC3F009AF365 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC9E0D51A91906C7FF13531 /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */;
+			baseConfigurationReference = 95A0A431DA49D98461C5FA1C /* Pods-VUT Bezpecnost v elektrotechnice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6YA6B56LR;
 				INFOPLIST_FILE = "VUT Bezpecnost v elektrotechnice/Info.plist";
@@ -375,6 +378,7 @@
 				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "mrmidi.VUT-Bezpecnost-v-elektrotechnice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,9 +386,10 @@
 		};
 		3A46C6B62504EC3F009AF365 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A09EDFB94350A94FF91681B1 /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */;
+			baseConfigurationReference = 925FD7BF11E9C23D66DFE20C /* Pods-VUT Bezpecnost v elektrotechnice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6YA6B56LR;
 				INFOPLIST_FILE = "VUT Bezpecnost v elektrotechnice/Info.plist";
@@ -395,6 +400,7 @@
 				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "mrmidi.VUT-Bezpecnost-v-elektrotechnice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
